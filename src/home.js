@@ -47,8 +47,13 @@ export function createMain() {
     main.append(h1);
 
     const p = document.createElement('p');
-    p.innerHTML = 'Home of the best over rice <br> in New York';
+    p.innerHTML = 'The <em>best</em> over rice in New York';
     main.append(p);
+
+    const orderButton = document.createElement('button');
+    orderButton.textContent = 'Order Now';
+    setAttributes(orderButton, {'id': 'order-button', 'type': 'button'});
+    main.append(orderButton);
 
     return main;
 }
