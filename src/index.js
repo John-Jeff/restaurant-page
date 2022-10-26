@@ -1,26 +1,34 @@
 import { createNav, createMain } from './home'
+import { createMenu } from './menu';
 
 const content = document.querySelector('#content');
-
 const nav = createNav();
 content.append(nav);
-
-const main = createMain();
-content.append(main);
+content.append(createMain());
 
 document.querySelector('#home').addEventListener('click', (e) => {
     e.preventDefault();
+    document.body.classList.remove('alt-body-background');
 
     while (content.firstElementChild) {
         content.removeChild(content.children[0]);
     };
 
-    console.log('home working');
-    const nav = createNav();
+    // console.log('home working');
     content.append(nav);
+    content.append(createMain());
+});
 
-    const main = createMain();
-    content.append(main);
-})
+document.querySelector('#menu').addEventListener('click', (e) => {
+    e.preventDefault();
+    document.body.classList.add('alt-body-background');
+
+    while (content.firstElementChild) {
+        content.removeChild(content.children[0]);
+    };
+
+    content.append(nav);
+    content.append(createMenu());
+});
 
 console.log('valid');
