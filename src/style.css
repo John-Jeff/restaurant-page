@@ -6,6 +6,7 @@ body {
     word-spacing: 6px;
     margin: 0;
     padding: 0;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -49,17 +50,17 @@ main {
     margin: 0 14rem;
 }
 
-h1, p {
+#home-heading, #home-desc {
     color: white;
 }
 
-h1 {
+#home-heading {
     font-size: 84px;
     line-height: 100px;
     margin: 6rem 0 0 0;
 }
 
-p {
+#home-desc {
     font-size: 28px;
     font-weight: 400;
 }
@@ -120,6 +121,42 @@ h2 {
 
 h3 {
     font-size: 24px;
+}
+
+/* ---Contact--- */
+#contact-page {
+    background: white;
+    height: min-content;
+    margin: 0 14rem;
+    padding: 3rem 5rem;
+    border-radius: 2rem;
+}
+
+#contact-heading,
+#phone,
+#address,
+#hours {
+    text-align: center;
+}
+
+#contact-heading {
+    font-size: 32px;
+    margin: 0;
+}
+
+#phone,
+#address,
+#hours {
+    margin: 3rem 0;
+}
+
+h4 {
+    font-size: 24px;
+    margin: 1em 0;
+}
+
+.contact-info {
+    font-size: 22px;
 }
 
 /* ---Media Queries--- */

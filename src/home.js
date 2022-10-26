@@ -43,10 +43,12 @@ export function createMain() {
     const main = document.createElement('main');
 
     const h1 = document.createElement('h1');
+    h1.setAttribute('id', 'home-heading');
     h1.innerHTML = 'MECCA <br> HALAL FOOD';
     main.append(h1);
 
     const p = document.createElement('p');
+    p.setAttribute('id', 'home-desc');
     p.innerHTML = 'The <em>best</em> over rice in New York';
     main.append(p);
 
